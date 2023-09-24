@@ -1,1 +1,2 @@
-# testNaming
+# Introduction
+My name is Linar Jonasson, I'm soon to be 20 years old. I've been hesitating for a long time what career path to take as I only dreamed of becoming a surgeon, until Covid-19 broke it by highlighting the possible stress associated with it. Only this year have I choosen the path to be a Web Developer with Associate's Degree to reduce total tuition cost and because I have no confidence in becoming Computer Scientist or Software Developer. I hope this course will improve my ability to analyze codes and turn empty languages into a working program. 
