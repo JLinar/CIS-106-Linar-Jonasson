@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="linar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-16 07:43:40 PM"/>
+        <attribute name="created" value="bGluYXI7TEpERUxMOzIwMjMtMTAtMTY7MDc6MjA6MDAgUE07MjI0MQ=="/>
+        <attribute name="edited" value="bGluYXI7TEpERUxMOzIwMjMtMTAtMTY7MDc6NDM6NDAgUE07MjsyMzU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="originPrice" type="Real" array="False" size=""/>
+            <declare name="currentPrice" type="Real" array="False" size=""/>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter purchase price, current price, number of shares.&quot;" newline="True"/>
+            <input variable="originPrice"/>
+            <input variable="currentPrice"/>
+            <input variable="quantity"/>
+            <declare name="totalPriceValueChange" type="Real" array="False" size=""/>
+            <assign variable="totalPriceValueChange" expression="currentPrice*quantity-originPrice*quantity"/>
+            <output expression="&quot;The total value of the stack has changed by: &quot;&amp; totalPriceValueChange" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

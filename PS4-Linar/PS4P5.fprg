@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="linar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-16 11:50:01 PM"/>
+        <attribute name="created" value="bGluYXI7TEpERUxMOzIwMjMtMTAtMTY7MDc6MjA6MDAgUE07MjI0MQ=="/>
+        <attribute name="edited" value="bGluYXI7TEpERUxMOzIwMjMtMTAtMTY7MTE6NTA6MDEgUE07NTsyMzUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="itemCost" type="Real" array="False" size=""/>
+            <declare name="sellCost" type="Real" array="False" size=""/>
+            <declare name="fixedCost" type="Real" array="False" size=""/>
+            <declare name="breakEven" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the following in order: item cost, selling price and fixed.   &quot;" newline="True"/>
+            <input variable="itemCost"/>
+            <input variable="sellCost"/>
+            <input variable="fixedCost"/>
+            <assign variable="breakEven" expression="fixedCost/(sellCost-itemCost)"/>
+            <output expression="&quot;Number of items sold for breaking even: &quot;&amp;breakEven" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
