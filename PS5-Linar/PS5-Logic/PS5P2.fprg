@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="linar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-24 09:30:13 PM"/>
+        <attribute name="created" value="bGluYXI7TEpERUxMOzIwMjMtMTAtMjQ7MDc6Mjk6MDYgUE07MjI1NQ=="/>
+        <attribute name="edited" value="bGluYXI7TEpERUxMOzIwMjMtMTAtMjQ7MDk6MzA6MTMgUE07MjsyMzU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="inputChoice" type="String" array="False" size=""/>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <declare name="extendedPrice" type="Real" array="False" size=""/>
+            <input variable="inputChoice"/>
+            <input variable="quantity"/>
+            <if expression="inputChoice == &quot;a&quot;">
+                <then>
+                    <assign variable="price" expression="10.00"/>
+                </then>
+                <else>
+                    <assign variable="price" expression="20.00"/>
+                </else>
+            </if>
+            <assign variable="extendedPrice" expression="price*quantity"/>
+            <output expression="&quot;Item: &quot;&amp;inputChoice&amp;&quot;  Unit price: &quot;&amp;price&amp;&quot; Extended price: &quot;&amp;extendedPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
