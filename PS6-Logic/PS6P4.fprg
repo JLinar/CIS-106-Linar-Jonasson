@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="linar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-17 08:51:23 PM"/>
+        <attribute name="created" value="bGluYXI7TEpERUxMOzIwMjMtMTEtMTc7MTE6Mjc6MjggQU07MjI0MA=="/>
+        <attribute name="edited" value="bGluYXI7TEpERUxMOzIwMjMtMTEtMTc7MDg6NTE6MjMgUE07NDsyMzY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="quantity"/>
+            <if expression="quantity&gt;=25">
+                <then>
+                    <assign variable="price" expression="50.00"/>
+                </then>
+                <else>
+                    <if expression="quantity&gt;=10 and quantity&lt;=24">
+                        <then>
+                            <assign variable="price" expression="60.00"/>
+                        </then>
+                        <else>
+                            <if expression="quantity&gt;=5 and quantity&lt;=9">
+                                <then>
+                                    <assign variable="price" expression="70.00"/>
+                                </then>
+                                <else>
+                                    <assign variable="price" expression="75.00"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="price*quantity"/>
+            <output expression="&quot;Quantity: &quot;&amp;quantity&amp;&quot;  Price per ticket: &quot;&amp;price&amp;&quot;  Total cost: &quot;&amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
