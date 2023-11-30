@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="linar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-18 04:57:26 PM"/>
+        <attribute name="created" value="bGluYXI7TEpERUxMOzIwMjMtMTEtMTg7MTI6MDk6MzUgUE07MjI1NQ=="/>
+        <attribute name="edited" value="bGluYXI7TEpERUxMOzIwMjMtMTEtMTg7MDQ6NTc6MjYgUE07MTsyMzY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="end" type="Integer" array="False" size=""/>
+            <declare name="odd" type="Integer" array="False" size=""/>
+            <assign variable="number" expression="1"/>
+            <assign variable="end" expression="25"/>
+            <while expression="number&lt;=end">
+                <assign variable="odd" expression="number%2"/>
+                <if expression="odd&gt;0">
+                    <then>
+                        <output expression="number" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="number" expression="number+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

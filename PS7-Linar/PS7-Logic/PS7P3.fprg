@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="linar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-28 07:42:55 PM"/>
+        <attribute name="created" value="bGluYXI7TEpERUxMOzIwMjMtMTEtMjg7MDc6MDk6MTQgUE07MjI1Nw=="/>
+        <attribute name="edited" value="bGluYXI7TEpERUxMOzIwMjMtMTEtMjg7MDc6NDI6NTUgUE07MTsyMzY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="students" type="Integer" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="exam1" type="Integer" array="False" size=""/>
+            <declare name="exam2" type="Integer" array="False" size=""/>
+            <assign variable="students" expression="0"/>
+            <output expression="&quot;Run the program? Y/N&quot;" newline="True"/>
+            <input variable="response"/>
+            <if expression="response==&quot;Y&quot; or response==&quot;y&quot;">
+                <then>
+                    <while expression="response==&quot;Y&quot; or response==&quot;y&quot;">
+                        <output expression="&quot;Enter your last name and exam scores: &quot;" newline="True"/>
+                        <input variable="name"/>
+                        <input variable="exam1"/>
+                        <input variable="exam2"/>
+                        <assign variable="students" expression="students+1"/>
+                        <output expression="&quot;Name: &quot;&amp;name&amp;&quot;  Your average score: &quot;&amp;exam1/2+exam2/2&amp;&quot;   Total number of students who used this: &quot;&amp;students" newline="True"/>
+                        <output expression="&quot;Do you want to continue? Y/N&quot;" newline="True"/>
+                        <input variable="response"/>
+                    </while>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
