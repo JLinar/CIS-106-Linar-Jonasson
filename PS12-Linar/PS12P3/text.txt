@@ -1,0 +1,10 @@
+Alex
+50.0
+Alice
+200.0
+Robert
+300.0
+Roland
+250.0
+Jessie
+400.0
